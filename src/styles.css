@@ -1,15 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+header{
     scroll-behavior: smooth;
     background-image:url('/assets/images/200.jpg');
-    min-height: 80vh;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height: 70vh;
+    }
+    #bodyPage{
+    scroll-behavior: smooth;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/assets/images/clarck.jpg');
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
     }
  
- .imagea{
+   .imagea{
      margin-top:34%;
      font-size:45px;
      font-weight:bolder;
