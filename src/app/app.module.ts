@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BodyPageComponent } from './body-page/body-page.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
     NavbarComponent,
     LandingPageComponent,
     BodyPageComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
