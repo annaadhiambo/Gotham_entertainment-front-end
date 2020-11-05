@@ -1,36 +1,35 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../_services/auth.service';
-
+import { UserService } from '../user.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.css'],
+  providers: [UserService]
 })
 export class RegisterComponent implements OnInit {
+  register;
 
-  form: any = {};
-  isSuccessful = false;
-  isSignUpFailed = false;
-  errorMessage = '';
-
-  constructor(private authService: AuthService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
+    this.register = {
+      username: '',
+      email: '',
+      password: '',
+    };
   }
-
-  onSubmit(): void {
-    this.authService.register(this.form).subscribe(
-      data => {
-        console.log(data);
-        this.isSuccessful = true;
-        this.isSignUpFailed = false;
+  registerUser() {
+    this.userService.registerNewUser(this.register).subscribe(
+      res => {
+        console.log(res)
+        alert('User ' + this.register.username + ' was created successfully')
+        this.router.navigate(['/login'])
       },
-      err => {
-        this.errorMessage = err.error.message;
-        this.isSignUpFailed = true;
+      error => {
+        return console.log(error, 'error');
       }
-    );
+    )
   }
-
 }
