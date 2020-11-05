@@ -11,6 +11,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BodyPageComponent } from './body-page/body-page.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterComponent } from './register/register.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegisterComponent } from './register/register.component';
     LandingPageComponent,
     BodyPageComponent,
     LoginFormComponent,
-    RegisterComponent
+    RegisterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
