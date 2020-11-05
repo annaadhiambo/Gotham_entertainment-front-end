@@ -1,4 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  background-color: #40686a;
+}
 header{
     scroll-behavior: smooth;
     background-image:url('/assets/images/200.jpg');
@@ -6,7 +11,7 @@ header{
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
-    height: 70vh;
+    height: 45vh;
     }
     #bodyPage{
     scroll-behavior: smooth;
