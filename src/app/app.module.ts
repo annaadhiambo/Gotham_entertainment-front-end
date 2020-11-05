@@ -9,9 +9,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BodyPageComponent } from './body-page/body-page.component';
-import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +19,9 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     LandingPageComponent,
     BodyPageComponent,
-    LoginFormComponent,
     RegisterComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
