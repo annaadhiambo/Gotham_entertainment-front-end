@@ -11,7 +11,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BodyPageComponent } from './body-page/body-page.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RegisterComponent } from './register/register.component';
-import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { ContactComponent } from './contact/contact.component';
     BodyPageComponent,
     LoginFormComponent,
     RegisterComponent,
-    ContactComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
