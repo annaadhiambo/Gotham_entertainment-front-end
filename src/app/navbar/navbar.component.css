@@ -1,3 +1,7 @@
 #navbar-component {
     background-color: transparent !important;
 }
+.navbar-brand {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+}

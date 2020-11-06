@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
     this.userService.loginUser(this.login).subscribe(
       res => {
         alert('Login Successful!')
-        this.router.navigate([""])
+        this.router.navigate(["/home"])
       },
       error => console.log(error, 'error')
     )
