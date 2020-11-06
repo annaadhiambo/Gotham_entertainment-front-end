@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.login {
+  width: 60%;
+  margin: auto;
+  box-shadow: -1px 2px 23px -4px rgba(0,0,0,0.75);
+  padding: 20px;
+  background-color: whitesmoke;
+}
+.login h1 {
+  font-family: 'Righteous', cursive;
+}
