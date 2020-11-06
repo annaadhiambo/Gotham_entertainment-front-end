@@ -6,7 +6,7 @@ export const environment = {
   production: false
 };
 
-export const baseUrl = 'http://127.0.0.1:8000/api/auth/'
+export const baseUrl = 'https://gotham26.herokuapp.com/api/auth/'
 
 /*
  * For easier debugging in development mode, you can import the following file

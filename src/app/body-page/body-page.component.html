@@ -1,11 +1,13 @@
-<section id="bodyPage"> 
-    <div class="container-fluid">
-        <h1 style="color: white;">More Movies</h1>
+<section id="bodyPage">
+    <div class="container">
+        <h1 style="color: white;" class="pt-3">Trending Movies</h1>
         <div class="row">
-            <div class="col-sm-3 mt-4 hover01 column">
-                <figure><img  width="100%"  src="/assets/images/100.jpg" alt=""></figure>
+            <div *ngFor="let movie of movies" class="col-sm-3 mt-4 hover01 column">
+                <figure><a routerLink="/home/{{ movie.id }}"><img width="100%" height="150px" src="{{ movie.poster }}"
+                            class="img-fluid" alt=""></a></figure>
             </div>
-            <div class="col-sm-3 mt-4 hover01 column">
+        </div>
+        <!-- <div class="col-sm-3 mt-4 hover01 column">
                 <figure><img width="100%" src="/assets/images/ann6.jpg" alt=""></figure>
             </div>
             <div class="col-sm-3 mt-4 hover01 column">
@@ -122,11 +124,9 @@
                 <figure><img  width="100%"  src="/assets/images/you.jpg" alt=""></figure>
             </div>
             
-        </div>
-        
-        
+        </div> -->
+
+
     </div>
-    
+
 </section>
-
-
