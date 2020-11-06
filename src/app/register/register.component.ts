@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
       res => {
         console.log(res)
         alert('User ' + this.register.username + ' was created successfully')
-        this.router.navigate(['/login'])
+        this.router.navigate(['/'])
       },
       error => {
         return console.log(error, 'error');
