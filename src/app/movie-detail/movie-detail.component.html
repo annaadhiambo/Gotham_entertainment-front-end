@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row p-5">
+    <div class="col-md-6">
+      <img src="{{ movie.poster }}" style="height: 100vh; width: 100%;" alt="">
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">{{ movie.title }}</h1>
+          <p>{{ movie.overview }}</p>
+          <p><small>Year {{ movie.year }}</small></p>
+        </div>
+        <div class="card-footer">
+          <p><a href="{{ movie.trailer }}" target="_blank" class="text-dark"><i class="fas fa-video mr-2"></i>Watch
+              Trailer</a></p>
+          <!-- <iframe width="853" height="480" src="{{ movie.trailer }}" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
