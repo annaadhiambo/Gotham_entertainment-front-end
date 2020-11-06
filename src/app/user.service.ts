@@ -11,7 +11,7 @@ export class UserService {
   constructor(private Http: HttpClient) { }
 
   registerNewUser(userData): Observable<any> {
-    return this.Http.post('https://gotham26.herokuapp.com/api/auth/register/', userData);
+    return this.Http.post(`${baseUrl}register/`, userData);
   }
 
   loginUser(data): Observable<any> {
